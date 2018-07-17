@@ -13,20 +13,20 @@
                     <div class="box text-center">
                         <div class="container">
                             <div class="rating animated" data-animation="fadeInDown">
+                                <!-- <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>  -->
                             </div>
                             <h2 class="title animated h1" data-animation="fadeInDown">
-                                A moment of <br /> <span>pure prestige</span>
+                                <!-- A moment of <br /> <span>pure prestige</span>  -->
                             </h2>
                             <div class="desc animated" data-animation="fadeInUp">
-                                Lavish social and business events
+                                <!-- Lavish social and business events  -->
                             </div>
                             <div class="desc animated" data-animation="fadeInUp">
-                                and unforgettable weddings.
+                                <!-- and unforgettable weddings.  -->
                             </div>
                             <!-- <div class="animated" data-animation="fadeInUp">
                                 <a href="https://themeforest.net/item/colina-hotel-website-template/20977257" class="btn btn-clean">Buy this template</a>
@@ -41,15 +41,15 @@
                     <div class="box text-center">
                         <div class="container">
                             <h2 class="title animated h1" data-animation="fadeInDown">
-                                The privacy and <br />
-                                individuality of a custom
+                                <!-- The privacy and <br />
+                                individuality of a custom  -->
                             </h2>
                             <div class="desc animated" data-animation="fadeInUp">
-                                The Residences have their own dedicated private entrance as well <br />
-                                as an anonymous "celebrity" entrance, for ultimate privacy.
+                                <!-- The Residences have their own dedicated private entrance as well <br />
+                                as an anonymous "celebrity" entrance, for ultimate privacy.  -->
                             </div>
                             <div class="animated" data-animation="fadeInUp">
-                                <a href="#" class="btn btn-clean">Virtual tour</a>
+                                <!-- <a href="#" class="btn btn-clean"> Virtual tour  </a> -->
                             </div>
                         </div>
                     </div>
@@ -61,17 +61,17 @@
                     <div class="box text-center">
                         <div class="container">
                             <div class="rating animated" data-animation="fadeInDown">
+                                <!-- <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>  -->
                             </div>
-                            <h2 class="title animated h1" data-animation="fadeInDown">Fairmont managed!</h2>
-                            <div class="desc animated" data-animation="fadeInUp">The elegant Champagne Bar, the stylish Colina Club.</div>
-                            <div class="desc animated" data-animation="fadeInUp">Guestrooms and luxurious suites</div>
+                            <h2 class="title animated h1" data-animation="fadeInDown"><!-- Fairmont managed!  --></h2>
+                            <div class="desc animated" data-animation="fadeInUp"><!--The elegant Champagne Bar, the stylish Colina Club.  --></div>
+                            <div class="desc animated" data-animation="fadeInUp"> <!--Guestrooms and luxurious suites --></div>
                             <div class="animated" data-animation="fadeInUp">
-                                <a href="#" class="btn btn-clean">Get insipred</a>
+                                <!-- <a href="#" class="btn btn-clean"><!-- Get insipred </a> -->
                             </div>
                         </div>
                     </div>
@@ -98,30 +98,30 @@
                         <!--=== date arrival ===-->
 
                         <div class="col-xs-4 col-sm-3">
-                            <div class="date" id="dateArrival" data-text="Arrival">
+                            <!-- <div class="date" id="dateArrival" data-text="Arrival">
                                 <input class="datepicker" readonly="readonly" />
                                 <div class="date-value"></div>
-                            </div>
+                            </div>  -->
                         </div>
 
                         <!--=== date departure ===-->
 
                         <div class="col-xs-4 col-sm-3">
-                            <div class="date" id="dateDeparture" data-text="Departure">
+                            <!-- <div class="date" id="dateDeparture" data-text="Departure">
                                 <input class="datepicker" readonly="readonly" />
                                 <div class="date-value"></div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <!--=== guests ===-->
 
                         <div class="col-xs-4 col-sm-2">
 
-                            <div class="guests" data-text="Guests">
-                                <div class="result">
+                            <div class="guests" data-text="" style="opacity: 0">
+                                 <div class="result">
                                     <input class="qty-result" type="text" value="2" id="qty-result" readonly="readonly" />
                                     <div class="qty-result-text date-value" id="qty-result-text"></div>
-                                </div>
+                                </div> 
                                 <!--=== guests list ===-->
                                 <ul class="guest-list">
 
@@ -208,11 +208,11 @@
 
                         <!--=== button ===-->
 
-                        <div class="col-xs-12 col-sm-4">
-                            <a href="reservation-1.html" class="btn btn-clean">
+                        <div class="col-xs-12 col-sm-4 ">
+                            <!--<a href="#" class="btn btn-clean" style="opacity: 0;">
                                 Book now
                                 <small>Best Prices Guaranteed</small>
-                            </a>
+                            </a> -->
                         </div>
 
                     </div> <!--/row-->

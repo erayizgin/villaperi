@@ -1,6 +1,6 @@
 <!-- Stored in resources/views/layouts/app.blade.php -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     @include('includes.head')
 </head>
