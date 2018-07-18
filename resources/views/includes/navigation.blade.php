@@ -22,7 +22,7 @@
         <!-- navigation-top-right -->
 
         <div class="navigation-top-right">
-            <a class="box" href="reservation-1.html">
+            <a class="box" href="#">
                 <i class="icon icon-tag"></i> 
                 Rezervasyon
             </a>

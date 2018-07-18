@@ -13,7 +13,9 @@
 
 Route::resource('contact', 'ContactController');
 Route::resource('rooms', 'RoomsController');
-Route::resource('roomsoverview', 'RoomsoverviewController');
+//Route::resource('roomsoverview', 'RoomsoverviewController');
+Route::get('roomsoverview/{id}', 'RoomsoverviewController@index');
+
 Route::resource('about', 'AboutController');
 Route::resource('facility', 'FacilityController');
 Route::resource('blogcategory', 'BlogcategoryController');

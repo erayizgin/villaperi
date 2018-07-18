@@ -5,7 +5,9 @@
 @section('content')
 
         <!-- ========================  Rooms ======================== -->
-
+		<!-- @foreach ($rooms as $room)
+            {{ $room->picture }}    
+        @endforeach -->
         <section class="page">
 
             <!-- ========================  Page header ======================== -->

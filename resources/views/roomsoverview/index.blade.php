@@ -4,15 +4,14 @@
 
 @section('content')
         <!-- ========================  Room ======================== -->
-
+		
         <section class="page">
 
             <!-- ===  Page header === -->
 
             <div class="page-header" style="background-image:url({{ asset('public/assets/images/header-1.jpg') }})">
                 <div class="container">
-                    <h2 class="title">Luxury appartment</h2>
-                    <p>Available from 199€ per night</p>
+                    <h2 class="title">{{@$roomDetails[0]->room_name}}</h2>
                 </div>
             </div>
 
@@ -25,23 +24,26 @@
                         <div class="owl-slider owl-theme owl-slider-gallery">
 
                             <!-- === slide item === -->
+							@foreach ($roomDetails as $room)
+								<div class="item" style="background-image:url({{ asset('public/assets/images/'.$room->picture) }})">
+                                	<img src="{{ asset('public/assets/images/'.$room->picture) }}" alt="" />
+                            	</div>
+                                  
+                            @endforeach
+                            
 
-                            <div class="item" style="background-image:url({{ asset('public/assets/images/room-4.jpg') }})">
-                                <img src="{{ asset('public/assets/images/room-4.jpg') }}" alt="" />
-                            </div>
-
-                            <!-- === slide item === -->
+                            <!-- === slide item === 
 
                             <div class="item" style="background-image:url({{ asset('public/assets/images/room-2.jpg') }})">
                                 <img src="{{ asset('public/assets/images/room-2.jpg') }}" alt="" />
                             </div>
+                            -->
 
-
-                            <!-- === slide item === -->
+                            <!-- === slide item === 
 
                             <div class="item" style="background-image:url({{ asset('public/assets/images/room-1.jpg') }})">
                                 <img src="{{ asset('public/assets/images/room-1.jpg') }}" alt="" />
-                            </div>
+                            </div> -->
 
 
                         </div> <!--/owl-slider-->
@@ -60,17 +62,7 @@
                                 <!--=== date arrival ===-->
 
                                 <div class="col-xs-4 col-sm-3">
-                                    <div class="date" id="dateArrival" data-text="Arrival">
-                                        <input class="datepicker" readonly="readonly" />
-                                        <div class="date-value"></div>
-                                    </div>
-                                </div>
-
-                                <!--=== date departure ===-->
-
-                                <div class="col-xs-4 col-sm-3">
-                                    <div class="date" id="dateDeparture" data-text="Departure">
-                                        <input class="datepicker" readonly="readonly" />
+                                    <div class="date" id="dateArrival" data-text="Arrival" style="opacity: 0">
                                         <div class="date-value"></div>
                                     </div>
                                 </div>
@@ -79,7 +71,7 @@
 
                                 <div class="col-xs-4 col-sm-2">
 
-                                    <div class="guests" data-text="Guests">
+                                    <div class="guests" data-text="Guests"  style="opacity: 0">
                                         <div class="result">
                                             <input class="qty-result" type="text" value="2" id="qty-result" readonly="readonly" />
                                             <div class="qty-result-text date-value" id="qty-result-text"></div>
@@ -167,7 +159,7 @@
                                     </div>
                                 </div>
 
-                                <!--=== button ===-->
+                                <!--=== button ===
 
                                 <div class="col-xs-12 col-sm-4">
                                     <a href="reservation-1.html" class="btn btn-clean">
@@ -175,7 +167,7 @@
                                         <small>Best Prices Guaranteed</small>
                                     </a>
                                 </div>
-
+                                -->
                             </div> <!--/row-->
                         </div><!--/booking-wrapper-->
                     </div> <!--/container-->

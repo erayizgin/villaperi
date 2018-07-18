@@ -55,15 +55,11 @@
 
                                         </div>
 
-                                        <p><strong class="text-center">The begining</strong></p>
+                                        <p><strong class="text-center">Peri Hotel</strong></p>
                                         <p>
-                                            The intimate side of our 19-room hotel enables us to provide personal customer service so we can help you during
-                                            stay in Paris and ensure you have a great experience.
-                                        </p>
-                                        <p>
-                                            We are delighted that 97.9% of our guests were happy with our service in 2015 (source – customer survey
-                                            This is what has made Hôtel La Tamise such a popular place among our guests who have ranked us top out of
-                                            1809 hotels in Paris on Trip Advisor.
+                                            İzmirin taşevleri, yel değirmenleri, eşsiz koy ve beachleriyle meşhur şehri  Alaçatı da tatil yapmak isteyen konuklarımızı taş otelimizde ağırlamaktan mutluluk duyarız.
+
+											Gün sonunda tatlı yorgunluğunuzu, renklerin enerjisiyle bütünleştirdiğimiz butik otelimizde evinizde ki huzur ve konforu hissederek  atabilirsiniz.
                                         </p>
 
                                         <p>
@@ -97,117 +93,6 @@
                                             later part of the 19th century.
                                         </p>
                                     </div>
-
-                                    <h2>Meet our team</h2>
-
-                                    <p>
-                                        Our architects and designers constantly and carefully monitor the environment, they accept and develop changes, research fashion and architectural, as well as sociological, changes and transform them into unique design.
-                                    </p>
-                                    <!-- === Our team === -->
-
-                                    <div class="team">
-
-                                        <div class="row">
-
-                                            <!-- === team member === -->
-
-                                            <div class="col-sm-3">
-                                                <article>
-                                                    <div class="details details-text">
-                                                        <div class="inner">
-                                                            <h4 class="title">Lea Nils</h4>
-                                                            <h6 class="title">Director</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="{{ asset('public/assets/images/user-5.jpg') }}" alt="" />
-                                                    </div>
-                                                    <div class="details details-social">
-                                                        <div class="inner">
-                                                            <a href="#"><i class="fa fa-phone"></i></a>
-                                                            <a href="#"><i class="fa fa-envelope"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <!-- === team member === -->
-
-                                            <div class="col-sm-3">
-                                                <article>
-                                                    <div class="details details-text">
-                                                        <div class="inner">
-                                                            <h4 class="title">Nora Star</h4>
-                                                            <h6 class="title">Architect</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="{{ asset('public/assets/images/user-4.jpg') }}" alt="" />
-                                                    </div>
-                                                    <div class="details details-social">
-                                                        <div class="inner">
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <!-- === team member === -->
-
-                                            <div class="col-sm-3">
-                                                <article>
-                                                    <div class="details details-text">
-                                                        <div class="inner">
-                                                            <h4 class="title">Jenna Hale</h4>
-                                                            <h6 class="title">Quality director</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="{{ asset('public/assets/images/user-3.jpg') }}" alt="" />
-                                                    </div>
-                                                    <div class="details details-social">
-                                                        <div class="inner">
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                            <!-- === team member === -->
-
-                                            <div class="col-sm-3">
-                                                <article>
-                                                    <div class="details details-text">
-                                                        <div class="inner">
-                                                            <h4 class="title">Glen Jordan</h4>
-                                                            <h6 class="title">Supervisor</h6>
-                                                        </div>
-                                                    </div>
-                                                    <div class="image">
-                                                        <img src="{{ asset('public/assets/images/user-4.jpg') }}" alt="" />
-                                                    </div>
-                                                    <div class="details details-social">
-                                                        <div class="inner">
-                                                            <a href="#"><i class="fa fa-facebook"></i></a>
-                                                            <a href="#"><i class="fa fa-twitter"></i></a>
-                                                            <a href="#"><i class="fa fa-google-plus"></i></a>
-                                                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-
-                                        </div> <!--/row-->
-
-                                    </div> <!--/team-->
                                 </div> <!--/col-->
                             </div> <!--/row-->
                         </div>
