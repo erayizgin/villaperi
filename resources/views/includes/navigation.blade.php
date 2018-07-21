@@ -94,7 +94,7 @@
                 <li>
                     <a href="#">Alaçatı <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
                     <ul>
-                        <li><a href="{{ url('/blogcategory') }}">Bölgede Yaşam</a></li>
+                        <li><a href="{{ url('/blogitem') }}">Bölgede Yaşam</a></li>
                     </ul>
                 </li>
                 <li>

@@ -13,7 +13,6 @@
             <div class="page-header" style="background-image:url({{ asset('public/assets/images/header-1.jpg') }})">
                 <div class="container text-center">
                     <h2 class="title">Kahvaltı</h2>
-                    <p>Restaurants & In-Room Dining</p>
                 </div>
             </div>
 
@@ -25,13 +24,13 @@
 
                             <!-- === slide item === -->
 
-                            <div class="item" style="background-image:url({{ asset('public/assets/images/item-2.jpg') }})">
+                            <div class="item" style="background-image:url({{ asset('public/assets/images/mutfak_1359.jpg') }})">
                                 <img src="{{ asset('public/assets/images/item-2.jpg') }}" alt="" />
                             </div>
 
                             <!-- === slide item === -->
 
-                            <div class="item" style="background-image:url({{ asset('public/assets/images/item-1.jpg') }})">
+                            <div class="item" style="background-image:url({{ asset('public/assets/images/mutfak_1367.jpg') }})">
                                 <img src="{{ asset('public/assets/images/item-1.jpg') }}" alt="" />
                             </div>
 
@@ -46,23 +45,11 @@
 
                             <div class="facility-info">
                                 <div class="row">
-                                    <div class="col-md-6">
-                                        <h2>Restaurants</h2>
+                                        <h2>Kahvaltı</h2>
                                         <p>
                                             The Resturant is the Colina Resort's iconic dining venue, serving breakfast, afternoon tea and an evening service complimented by
                                             the recent addition of a bar and craft cocktail program.
                                         </p>
-                                        <!--<p>
-                                    Enjoy the world’s finest wines, champagnes, caviar and other indulgences while
-                                    overlooking Fifth Avenue and the famous Pulitzer Fountain.
-                                </p>-->
-                                    </div>
-                                    <div class="col-md-6">
-                                        <h2>In-room dining</h2>
-                                        <p>
-                                            A private meal in the comfort of your room or suite is one of the great pleasures of staying at The Plaza.  Enjoy our celebrated cuisine in the comfort of your own room 24-hours a day.
-                                        </p>
-                                    </div>
                                 </div>
                             </div>
 
@@ -76,19 +63,7 @@
                                     <li role="presentation" class="active">
                                         <a href="#menus" aria-controls="menus" role="tab" data-toggle="tab">
                                             <i class="hotelicon hotelicon-kitchen"></i>
-                                            <span class="visible-md visible-lg">Menus</span>
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#chefs" aria-controls="chefs" role="tab" data-toggle="tab">
-                                            <i class="hotelicon hotelicon-guestbook"></i>
-                                            <span class="visible-md visible-lg">Chefs</span>
-                                        </a>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#events" aria-controls="events" role="tab" data-toggle="tab">
-                                            <i class="hotelicon hotelicon-clock"></i>
-                                            <span class="visible-md visible-lg">Events</span>
+                                            <span class="visible-md visible-lg">Menu</span>
                                         </a>
                                     </li>
                                 </ul>
@@ -110,10 +85,10 @@
 
                                                     <div class="col-xs-12 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1.jpg') }})">
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1216.jpg') }})">
                                                                 <img src="{{ asset('public/assets/images/food-1.jpg') }}" alt="" />
                                                             </figcaption>
-                                                            <a href="#" class="btn btn-clean" onclick="">Breakfast</a>
+                                                            <a href="#" class="btn btn-clean" onclick="">Kahvaltı 1</a>
                                                         </figure>
                                                     </div>
 
@@ -121,10 +96,10 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-2.jpg') }})">
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1219.jpg') }})">
                                                                 <img src="{{ asset('public/assets/images/food-2.jpg"') }} alt="" />
                                                             </figcaption>
-                                                            <a href="#" class="btn btn-clean">Lunch</a>
+                                                            <a href="#" class="btn btn-clean">Kahvaltı 2</a>
                                                         </figure>
                                                     </div>
 
@@ -132,10 +107,10 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-3.jpg') }})">
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1220.jpg') }})">
                                                                 <img src="{{ asset('public/assets/images/food-3.jpg') }}" alt="" />
                                                             </figcaption>
-                                                            <a href="#" class="btn btn-clean">Dinner</a>
+                                                            <a href="#" class="btn btn-clean">Kahvaltı 3</a>
                                                         </figure>
                                                     </div>
 
@@ -143,10 +118,10 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-4.jpg') }})">
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1223.jpg') }})">
                                                                 <img src="{{ asset('public/assets/images/food-4.jpg') }}" alt="" />
                                                             </figcaption>
-                                                            <a href="#" class="btn btn-clean">In-room</a>
+                                                            <a href="#" class="btn btn-clean">Kahvaltı 4</a>
                                                         </figure>
                                                     </div>
 

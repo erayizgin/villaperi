@@ -23,7 +23,7 @@
                             <small>Copyright &copy; 2018 &nbsp; | &nbsp; <a href="#">Peri Hotel</a></small>
                         </div>
                         <div class="col-sm-12 text-center">
-                            <img src="public/assets/images/logo-footer.png" alt="" />
+                            <img src="{{ asset('public/assets/images/logo-footer.png') }}" alt="" />
                         </div>
                     </div>
                 </div>

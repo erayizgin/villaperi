@@ -185,7 +185,7 @@
 
                                 <div class="room-block room-aminities">
 
-                                    <h2 class="title">Room aminities</h2>
+                                    <h2 class="title">Oda İmkanları</h2>
 
                                     <div class="row">
 
@@ -195,7 +195,7 @@
                                             <figure>
                                                 <figcaption>
                                                     <span class="hotelicon hotelicon-air-condition"></span>
-                                                    <p>Aircondition</p>
+                                                    <p>Klima</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -206,7 +206,7 @@
                                             <figure>
                                                 <figcaption>
                                                     <span class="hotelicon hotelicon-king-bed"></span>
-                                                    <p>1 Kingsize bed</p>
+                                                    <p>Yatak</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -217,7 +217,7 @@
                                             <figure>
                                                 <figcaption>
                                                     <span class="hotelicon hotelicon-guest"></span>
-                                                    <p>2 People</p>
+                                                    <p>2 Kişi</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -238,8 +238,8 @@
                                         <div class="col-xs-6 col-sm-2">
                                             <figure>
                                                 <figcaption>
-                                                    <span class="hotelicon hotelicon-washer"></span>
-                                                    <p>Washer</p>
+                                                    <span class="hotelicon hotelicon-dining"></span>
+                                                    <p>Mini Bar</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
@@ -249,8 +249,8 @@
                                         <div class="col-xs-6 col-sm-2">
                                             <figure>
                                                 <figcaption>
-                                                    <span class="hotelicon hotelicon-roomservice"></span>
-                                                    <p>Room service</p>
+                                                    <span class="hotelicon hotelicon-hangers"></span>
+                                                    <p>Ütü</p>
                                                 </figcaption>
                                             </figure>
                                         </div>
