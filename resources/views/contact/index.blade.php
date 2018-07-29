@@ -50,17 +50,17 @@
                                                 <a class="btn btn-clean open-form" data-text-open="Form ile bize ulaşın." data-text-close="Formu Kapat">Form ile bize ulaşın.</a>
 
                                                 <div class="contact-form clearfix">
-                                                    <form action="#" method="post">
+                                                    <form action="#" method="post" id="contact-form">
                                                         <div class="row">
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <input type="text" value="" class="form-control" placeholder="İsminiz" required="required">
+                                                                    <input type="text" name="name" value="" class="form-control" placeholder="İsminiz" required="required">
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <div class="form-group">
-                                                                    <input type="email" value="" class="form-control" placeholder="Email Adresiniz" required="required">
+                                                                    <input type="email" name="email" value="" class="form-control" placeholder="Email Adresiniz" required="required">
                                                                 </div>
                                                             </div>
 
@@ -73,13 +73,18 @@
 
                                                             <div class="col-md-12">
                                                                 <div class="form-group">
-                                                                    <textarea class="form-control" placeholder="Mesajınız" rows="10"></textarea>
+                                                                    <textarea class="form-control" name='message' placeholder="Mesajınız" rows="10"></textarea>
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-md-12 text-center">
-                                                                <input type="submit" class="btn btn-clean" value="Mesajı Gönder" />
+                                                                <input type="submit" id="contact-send" class="btn btn-clean" value="Mesajı Gönder" />
                                                             </div>
+                                                            
+                                                            <div id="sendmessage" style="color:mediumspringgreen">
+                                                                Mesajınız başarıyla gönderilmiştir.
+                                                            </div>
+                                                            
                                                         </div>
                                                     </form>
                                                 </div>
@@ -173,4 +178,35 @@
             });
         }
     </script>
+    <script>
+    	$(function() {
+    		$('#sendmessage').hide();
+    		$("#contact-send").click(function() {
+    			$("#contact-send").attr('disabled', 'disabled');
+        		
+    			var name = $("#contact-form input[name='name']").val();
+    			
+    			var email = $("#contact-form input[name='email']").val();
+    			var text = $("textarea[name='message']").val();
+    			
+    			var dataString = 'name='+ name + '&email=' + email + '&text=' + text;
+    			$.ajax({
+    				type: "POST",
+    				url: "{{ url('/getmsg') }}",
+    				data: dataString,
+    				complete: function(){
+    					$("#contact-send").removeAttr("disabled");
+    					$('#sendmessage').show();
+    				}
+    			});
+    
+    			return false;
+    			
+    		});
+    	});
+			
+	</script>
 @stop
+
+
+
