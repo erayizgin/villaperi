@@ -9,6 +9,7 @@
     <!-- Meta tags -->
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="favicon.ico">
 
     <!--Title-->
@@ -43,3 +44,5 @@
 
       gtag('config', 'UA-121335591-1');
     </script>
+    
+    

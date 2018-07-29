@@ -8,15 +8,12 @@
                 <div class="footer-social">
                     <div class="row">
                         <div class="col-sm-12 text-center hidden">
-                            <a href="" class="footer-logo"><img src="public/assets/images/logo.png" alt="Alternate Text" /></a>
+                            <a href="" class="footer-logo"><img src="{{ asset('public/assets/images/logo.png') }}" alt="Alternate Text" /></a>
                         </div>
                         <div class="col-sm-12 icons">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/villaperi.butikotel.7" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.instagram.com/villapeributikotel" target="_blank"><i class="fa fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <div class="col-sm-12 copyright">

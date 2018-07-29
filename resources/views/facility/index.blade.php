@@ -25,13 +25,13 @@
                             <!-- === slide item === -->
 
                             <div class="item" style="background-image:url({{ asset('public/assets/images/mutfak_1359.jpg') }})">
-                                <img src="{{ asset('public/assets/images/item-2.jpg') }}" alt="" />
+                                <img src="{{ asset('public/assets/images/mutfak_1359.jpg') }}" alt="" />
                             </div>
 
                             <!-- === slide item === -->
 
                             <div class="item" style="background-image:url({{ asset('public/assets/images/mutfak_1367.jpg') }})">
-                                <img src="{{ asset('public/assets/images/item-1.jpg') }}" alt="" />
+                                <img src="{{ asset('public/assets/images/mutfak_1367.jpg') }}" alt="" />
                             </div>
 
                         </div> <!--/owl-slider-->
@@ -46,10 +46,6 @@
                             <div class="facility-info">
                                 <div class="row">
                                         <h2>Kahvaltı</h2>
-                                        <p>
-                                            The Resturant is the Colina Resort's iconic dining venue, serving breakfast, afternoon tea and an evening service complimented by
-                                            the recent addition of a bar and craft cocktail program.
-                                        </p>
                                 </div>
                             </div>
 
@@ -85,8 +81,8 @@
 
                                                     <div class="col-xs-12 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1216.jpg') }})">
-                                                                <img src="{{ asset('public/assets/images/food-1.jpg') }}" alt="" />
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food_8456.jpg') }})">
+                                                                <img src="{{ asset('public/assets/images/food_8456.jpg') }}" alt="" />
                                                             </figcaption>
                                                             <a href="#" class="btn btn-clean" onclick="">Kahvaltı 1</a>
                                                         </figure>
@@ -96,8 +92,8 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1219.jpg') }})">
-                                                                <img src="{{ asset('public/assets/images/food-2.jpg"') }} alt="" />
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food_8457.jpg') }})">
+                                                                <img src="{{ asset('public/assets/images/food_8457.jpg') }}" alt="" />
                                                             </figcaption>
                                                             <a href="#" class="btn btn-clean">Kahvaltı 2</a>
                                                         </figure>
@@ -107,8 +103,8 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1220.jpg') }})">
-                                                                <img src="{{ asset('public/assets/images/food-3.jpg') }}" alt="" />
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food_8646_1.jpg') }})">
+                                                                <img src="{{ asset('public/assets/images/food_8646_1.jpg') }}" alt="" />
                                                             </figcaption>
                                                             <a href="#" class="btn btn-clean">Kahvaltı 3</a>
                                                         </figure>
@@ -118,8 +114,8 @@
 
                                                     <div class="col-xs-6 col-md-6">
                                                         <figure>
-                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food-1223.jpg') }})">
-                                                                <img src="{{ asset('public/assets/images/food-4.jpg') }}" alt="" />
+                                                            <figcaption style="background-image:url({{ asset('public/assets/images/food_9485.jpg') }})">
+                                                                <img src="{{ asset('public/assets/images/food_9485.jpg') }}" alt="" />
                                                             </figcaption>
                                                             <a href="#" class="btn btn-clean">Kahvaltı 4</a>
                                                         </figure>

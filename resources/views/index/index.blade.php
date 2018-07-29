@@ -7,9 +7,9 @@
         <section class="frontpage-slider">
             <div class="owl-slider owl-slider-header owl-slider-fullscreen">
 
-                <!-- === slide item === -->
+                <!-- === slide item 1=== -->
 
-                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-3.jpg') }})">
+                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-1371.jpg') }})">
                     <div class="box text-center">
                         <div class="container">
                             <div class="rating animated" data-animation="fadeInDown">
@@ -35,9 +35,9 @@
                     </div>
                 </div>
 
-                <!-- === slide item === -->
+                <!-- === slide item 2=== -->
 
-                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-1.jpg') }})">
+                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-1192.jpg') }})">
                     <div class="box text-center">
                         <div class="container">
                             <h2 class="title animated h1" data-animation="fadeInDown">
@@ -55,9 +55,9 @@
                     </div>
                 </div>
 
-                <!-- === slide item === -->
+                <!-- === slide item 3=== -->
 
-                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-2.jpg') }})">
+                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-1375.jpg') }})">
                     <div class="box text-center">
                         <div class="container">
                             <div class="rating animated" data-animation="fadeInDown">

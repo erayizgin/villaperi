@@ -8,14 +8,11 @@
         <!-- navigation-top-left -->
 
         <div class="navigation-top-left">
-            <a class="box" href="#">
+            <a class="box" href="https://www.facebook.com/villaperi.butikotel.7" target="_blank" >
                 <i class="fa fa-facebook"></i>
             </a>
-            <a class="box" href="#">
-                <i class="fa fa-twitter"></i>
-            </a>
-            <a class="box" href="#">
-                <i class="fa fa-youtube"></i>
+            <a class="box" href="https://www.instagram.com/villapeributikotel" target="_blank">
+                <i class="fa fa-instagram"></i>
             </a>
         </div>
 
@@ -28,7 +25,7 @@
             </a>
             <a class="box" href="#">
                 <i class="icon icon-phone-handset"></i> 
-                (01) 252-3333
+                05340890404
             </a>
         </div>
     </nav>
@@ -40,7 +37,7 @@
         <!-- logo -->
 
         <div class="logo animated fadeIn">
-            <a href="index.html">
+            <a href="{{ url('/') }}">
                 <img class="logo-desktop" src="{{ asset('public/assets/images/logo.png') }}" alt="Alternate Text" />
                 <img class="logo-mobile" src="{{ asset('public/assets/images/logo-mobile.png') }}" alt="Alternate Text" />
             </a>
@@ -67,13 +64,6 @@
                 </li>
                 <li>
                     <a href="{{ url('/about') }}">Hakkımızda</a>
-                    <!-- <ul>
-                        <li><a href="about.html">Hakkımızda</a></li>
-                        <li><a href="rooms-category.html">Rooms category</a></li>
-                        <li><a href="room-overview.html">Room overview</a></li>
-                        <li><a href="404.html">404 Not found</a></li>
-                        <li><a href="shortcodes.html">Shortcodes</a></li>
-                    </ul>  -->
                 </li>
                 <li>
                     <a href="{{ url('/rooms') }}">ODALAR</a>
@@ -82,6 +72,9 @@
                         <li><a href="reservation-2.html">Booking step 2</a></li>
                         <li><a href="reservation-3.html">Booking step 3</a></li>
                     </ul>  -->
+                </li>
+                <li>
+                    <a href="{{ url('gallery') }}">Galeri</a>
                 </li>
             </ul>
 

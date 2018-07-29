@@ -175,7 +175,7 @@
                 <!-- ===  Room overview === -->
 
                 <div class="room-overview">
-
+					
                     <div class="container">
                         <div class="row">
 
@@ -259,7 +259,7 @@
                                 </div>
 
                                 <!-- === Room block === -->
-
+								<!-- 
                                 <div class="room-block">
                                     <h2 class="title">Room overview</h2>
                                     <p>
@@ -270,12 +270,12 @@
                                         Bathrobes, slippers and SOTHYS toiletries are provided in the bathroom to pamper you.
                                     </p>
                                 </div>
-
+                                 -->
                                 <!-- === Room block === -->
 
                                 <div class="room-block">
 
-                                    <h2 class="title">House rules</h2>
+                                    <h2 class="title">Oda Bilgileri</h2>
 
                                     <!-- === box === -->
 
@@ -285,7 +285,7 @@
                                                 <p><strong>Check-In</strong></p>
                                             </div>
                                             <div class="col-md-8">
-                                                <p>14:00 - 22:00</p>
+                                                <p>14:00</p>
                                             </div>
                                         </div>
                                     </div>
@@ -298,99 +298,47 @@
                                                 <p><strong>Check-out</strong></p>
                                             </div>
                                             <div class="col-md-8">
-                                                <p>14:00 - 22:00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- === box === -->
-
-                                    <div class="box">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p><strong>Luggage storage</strong></p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>14:00 - 22:00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- === box === -->
-
-                                    <div class="box">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p><strong>Cancellation/prepayment</strong></p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>
-                                                    Cancellation and prepayment policies vary according to room type. Please enter the dates of your stay and check the conditions of your required room.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- === box === -->
-
-                                    <div class="box">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p><strong>Children and extra beds</strong></p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>All children are welcome.</p>
-                                                <p>One child under 6 years is charged EUR 50 per night when using existing beds.</p>
-                                                <p>There is no capacity for extra beds in the room.</p>
-                                                <p>Supplements are not calculated automatically in the total costs and will have to be paid for separately during your stay.                                        </p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- === box === -->
-
-                                    <div class="box">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p><strong>Pets</strong></p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>Pets are not allowed.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- === box === -->
-
-                                    <div class="box">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <p><strong>Additional info</strong></p>
-                                            </div>
-                                            <div class="col-md-8">
-                                                <p>Please note that the restaurant is closed each Sunday.</p>
-                                                <p>The restaurant will also be closed during Christmas (25-26 December).</p>
-                                                <p>Please note that parking spaces cannot be reserved or guaranteed.</p>
-                                                <p>
-                                                    For a group booking more than 5 rooms up to 4 weeks prior to arrival cancellation is
-                                                    100% free of charge, within 2 until 4 weeks 50% free of charge, and within 2 weeks the
-                                                    property will charge you in full. Please note that Ozo hotel always charges city tax
-                                                    prior to your arrival with the non-refundable rate or group booking.
-                                                </p>
-                                                <p>
-                                                    Please note that the credit card that is used for the booking needs to be present at check-in.
-                                                    When this credit card is not available please bring a photocopy of the credit card with
-                                                    authorization of the owner.
-                                                </p>
+                                                <p>12:00</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                
+                                
 
                             </div> <!--/col-sm-10-->
                         </div> <!--/row-->
+                        
+                        
                     </div> <!--/container-->
                 </div> <!--/room-overview-->
+                
+                <div class="image-blocks image-blocks-category">
+                	<div class="container">
+                    	<!--=== item block === -->
+    				
+                        <div class="blocks blocks-left">
+                            <div class="item">
+                                <div class="text">
+                                    <div class="h2">Hotel bilgileri</div>
+                                    <ul>
+                                        <li>Check-in : 14.00</li>
+                                        <li>Check-out: 12:00</li>
+                                        <li>Klima</li>
+                                        <li>TV</li>
+                                        <li>Mini Bar</li>
+                                        <li>Kettle</li>
+                                        <li>Saç Kurutma</li>
+                                        <li>Ütü</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="image" style="background-image:url({{ asset('public/assets/images/slide-1.jpg') }})">
+                                <img src="{{ asset('public/assets/images/slide-1.jpg') }}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </section>

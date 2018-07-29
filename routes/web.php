@@ -20,6 +20,20 @@ Route::resource('about', 'AboutController');
 Route::resource('facility', 'FacilityController');
 Route::resource('blogcategory', 'BlogcategoryController');
 Route::resource('blogitem', 'BlogitemController');
+Route::resource('gallery', 'GalleryController');
+
+Route::post('/getmsg','EmailController@index');
+
+Route::get('login', array(
+    'uses' => 'LoginController@showLogin'));
+
+// route to process the form
+Route::post('login', array(
+    'uses' => 'LoginController@doLogin'
+));
+Route::get('logout', array(
+    'uses' => 'LoginController@doLogout'
+));
 
 Route::resource('/', 'IndexController');
 
