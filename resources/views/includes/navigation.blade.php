@@ -19,7 +19,7 @@
         <!-- navigation-top-right -->
 
         <div class="navigation-top-right">
-            <a class="box" href="#">
+            <a class="box" href="https://www.reseliva.com/hotel/Villa-Peri-Butik-Otel/" target="_blank">
                 <i class="icon icon-tag"></i> 
                 Rezervasyon
             </a>

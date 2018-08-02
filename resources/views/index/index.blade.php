@@ -26,11 +26,7 @@
                                 <!-- Lavish social and business events  -->
                             </div>
                             <div class="desc animated" data-animation="fadeInUp">
-                                <!-- and unforgettable weddings.  -->
                             </div>
-                            <!-- <div class="animated" data-animation="fadeInUp">
-                                <a href="https://themeforest.net/item/colina-hotel-website-template/20977257" class="btn btn-clean">Buy this template</a>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -72,6 +68,26 @@
                             <div class="desc animated" data-animation="fadeInUp"> <!--Guestrooms and luxurious suites --></div>
                             <div class="animated" data-animation="fadeInUp">
                                 <!-- <a href="#" class="btn btn-clean"><!-- Get insipred </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- === slide item 4=== -->
+
+                <div class="item" style="background-image:url({{ asset('public/assets/images/slide-1151.jpg') }})">
+                    <div class="box text-center">
+                        <div class="container">
+                            <h2 class="title animated h1" data-animation="fadeInDown">
+                                <!-- The privacy and <br />
+                                individuality of a custom  -->
+                            </h2>
+                            <div class="desc animated" data-animation="fadeInUp">
+                                <!-- The Residences have their own dedicated private entrance as well <br />
+                                as an anonymous "celebrity" entrance, for ultimate privacy.  -->
+                            </div>
+                            <div class="animated" data-animation="fadeInUp">
+                                <!-- <a href="#" class="btn btn-clean"> Virtual tour  </a> -->
                             </div>
                         </div>
                     </div>
