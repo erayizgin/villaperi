@@ -224,11 +224,10 @@
 
                         <!--=== button ===-->
 
-                        <div class="col-xs-12 col-sm-4 ">
-                            <!--<a href="#" class="btn btn-clean" style="opacity: 0;">
-                                Book now
-                                <small>Best Prices Guaranteed</small>
-                            </a> -->
+                        <div class="col-xs-12 col-sm-4">
+                            <a href="https://www.reseliva.com/hotel/Villa-Peri-Butik-Otel/" class="btn btn-clean" target="_blank">
+                                Rezervasyon
+                            </a>
                         </div>
 
                     </div> <!--/row-->

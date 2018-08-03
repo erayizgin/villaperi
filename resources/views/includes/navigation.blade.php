@@ -82,7 +82,7 @@
 
             <ul class="navigation-right">
                 <li>
-                    <a href="{{ url('/facility') }}">Otel Servisleri</a>
+                    <a href="{{ url('/facility') }}">Peri Mutfak</a>
                 </li>
                 <li>
                     <a href="#">Alaçatı <span class="open-dropdown"><i class="fa fa-angle-down"></i></span></a>
