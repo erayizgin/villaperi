@@ -4,7 +4,7 @@
 <script src="{{ asset('public/css/admin/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 <!-- FastClick -->
 <script src="{{ asset('public/css/admin/bower_components/fastclick/lib/fastclick.js') }}"></script>
-<!-- AdminLTE App -->{{ asset('public/css/admin/dist/js/adminlte.min.js') }}
+<!-- AdminLTE App -->
 <script src="{{ asset('public/css/admin/dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('public/css/admin/dist/js/demo.js') }}"></script>

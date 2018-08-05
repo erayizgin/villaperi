@@ -12,16 +12,15 @@ class VillaController extends Controller
 {   
     protected $layout = 'layouts.admin';
     protected $actionName;
+    protected $userSession;
     
     public function __construct(Request $request)
     {
         $this->actionName = $request->route()->getActionMethod();
-        //$menu = DB::select('select * from menu join menusub on menu.id = menusub.main_id');
     }
     
     public function index()
     {
-        
         return view('villa.index');   
     }
     
@@ -29,16 +28,15 @@ class VillaController extends Controller
     {
         $email = $request->email;
         $password = $request->password;
-        
-        echo 'select id, name, email from user where email=\''.$email.'\' and password=\''.$password.'\'';
-        
-        $user = DB::select('select id, name, email from user where email=\''.$email.'\' and password=\''.$password.'\'')[0];
+
+        $user = DB::select('select id, name, email from user where email=\''.$email.'\' and password=\''.$password.'\'');
         
         if(count($user) > 0)
         {
             $userSession = [
-                "email" => $user->email,
-                "id" => $user->id
+                "email" => $user[0]->email,
+                "name" => $user[0]->name,
+                "id" => $user[0]->id
             ];
             
             print_r($user);
@@ -46,11 +44,19 @@ class VillaController extends Controller
         }
         
         if (Session::has('userinfo'))       
-            Redirect::route('clients.show, $id');
+            return redirect('villa/show');
+        else 
+            return redirect('villa');
     }
     
     public function show(Request $request)
     {
+        if (Session::has('userinfo'))
+        {
+            $userName = Session::get('userinfo')['name'];
+        } else
+            return redirect('villa');
+        
         if ($request->isMethod('post')) {
             //print_r($request);
             DB::update('update content set description = ?, main_title = ?, updated_at = now() where section = \'about\'', 
@@ -65,6 +71,12 @@ class VillaController extends Controller
     
     public function region(Request $request)
     {
+        if (Session::has('userinfo'))
+        {
+            $userName = Session::get('userinfo')['name'];
+        } else 
+            return redirect('villa');
+           
         if ($request->isMethod('post')) {
             //print_r($request);
             DB::update('update content set description = ?, main_title = ?, updated_at = now() where section = \'alacati\'',
@@ -72,10 +84,16 @@ class VillaController extends Controller
             return response()->json(['success'=>'Data is successfully added']);
         }
         
-        //echo $this->actionName;
         
         $content = DB::select('select id, main_title, section, description from content where section=\'alacati\'')[0];
         return view('villa.region',['content' => $content, 'actionName'=> $this->actionName]);
+    }
+    
+    public function logout()
+    {
+        Session::flush();
+        return redirect('villa');
+        
     }
     
 }
