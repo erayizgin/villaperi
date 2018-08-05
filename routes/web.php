@@ -17,6 +17,9 @@ Route::get('roomsoverview/{id}', 'RoomsoverviewController@index');
 
 Route::resource('about', 'AboutController');
 Route::post('villa/trysign', 'VillaController@trysign');
+Route::post('villa/show', 'VillaController@show');
+Route::post('villa/region', 'VillaController@region');
+Route::get('villa/region', 'VillaController@region');
 Route::resource('villa', 'VillaController');
 
 Route::resource('facility', 'FacilityController');

@@ -57,30 +57,10 @@
                                     <!--=== blog title ===-->
 
                                     <div class="h1 title">
-                                        Alaçatı
+                                        {!! $blogContent->main_title !!}
                                     </div>
 
-                                    <p>
-                                        Çeşme ilçesi sınırlarında yer alan, son yıllarda Ege Bölgesinde bulunan en gözde tatil yeri ve turizm merkezidir.                                      
-                                    </p>
-
-                                    <p>
-                                        Akdeniz sıcağını sevmeyenlerin başlıca tatil adreslerinden biridir. Rüzgarı bol Alaçatının deniz suyu hem daha serin 
-                                        hem daha az tuzludur. Rengarenk taş evleri ve hayat dolu sokaklarıyla kendi küçük ünü büyük belde rüzgar sörfü 
-                                        tutkunlarının da uğrak yeridir.
-                                    </p>
-                                    <p>
-                                        Türkiyenin sörf cenneti olan Alaçatıdan  canlı gece hayatı,denizi,plajları,dinamik turist nüfusu,
-                                        butik otel ve dükkanları için günlerce ayrılmak istemeyeceksiniz.
-                                    </p>
-                                    <p>
-                                    </p>
-                                    <p>
-                                        Alaçatı sadece yazın değil kışın da sörf tutkunlarının ortak adresidir.Ancak bunun da ötesinde görmeniz gereken çok sayıda noktaya sahiptir.
-                                        Meşhur Alaçatı pazarından Alaçatı değirmenlerine, eşsiz koylarında mutlaka ziyaret etmelisiniz.
-                                        Hem yılın yorgunluğunu atmak hem hayat dolu kalabalık içinde eğlenmek istiyorsanız burası, Türkiye de gidebileceğiniz 
-                                        en iyi rotalardan biridir. 
-                                    </p>
+                                    {!! $blogContent->description !!}
                                 </div>
 
 

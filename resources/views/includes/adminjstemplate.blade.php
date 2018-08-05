@@ -21,3 +21,12 @@
     $('.textarea').wysihtml5()
   })
 </script>
+<script>
+    $.ajaxSetup({
+    	  headers: {
+    	    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    	  }
+	});
+</script>
+
+@yield('pageinlinejs')

@@ -11,6 +11,8 @@ class BlogitemController extends Controller
     {
         $blogDetails = DB::select('select * from blog b join blog_pictures bp on b.id = bp.blog_id where b.id = 1');
         
-        return view('blogitem.index',['blogDetails' => $blogDetails]);
+        $blogContent = DB::select('select id, section, main_title, description from content where section=\'alacati\'')[0];
+        
+        return view('blogitem.index',['blogDetails' => $blogDetails, 'blogContent' => $blogContent]);
     }
 }

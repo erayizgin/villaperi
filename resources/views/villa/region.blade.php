@@ -1,15 +1,14 @@
  @extends('layouts.admin')
  
-  @section('title', 'Hakkımızda')
+ @section('title', 'Bölgede Yaşam - Alaçatı')
   
  @section('content')
 <div class="col-md-12">
-
 	<div class="box box-info">
 		<form action="#" method="post" id="content-form">
-			<!-- <input type="hidden" name="_token" value="{{ csrf_token() }}" />  -->
+			<input type="hidden" name="_token" value="{{ csrf_token() }}" />
     		<div class="box-header">
-    			<h3 class="box-title">Peri Hotel</h3>
+    			<h3 class="box-title">Bölgede Yaşam</h3>
     			<!-- tools box -->
     			<div class="pull-right box-tools">
     				<button type="button" class="btn btn-info btn-sm"
@@ -58,7 +57,7 @@
     			
     			$.ajax({
     				type: "POST",
-    				url: "{{ url('villa/show') }}",
+    				url: "{{ url('villa/region') }}",
     				data: dataString,
     				complete: function(){
     					$("#savecontent").removeAttr("disabled");

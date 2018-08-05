@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
@@ -10,9 +11,17 @@ use Illuminate\Support\Facades\Session;
 class VillaController extends Controller
 {   
     protected $layout = 'layouts.admin';
+    protected $actionName;
+    
+    public function __construct(Request $request)
+    {
+        $this->actionName = $request->route()->getActionMethod();
+        //$menu = DB::select('select * from menu join menusub on menu.id = menusub.main_id');
+    }
     
     public function index()
     {
+        
         return view('villa.index');   
     }
     
@@ -40,9 +49,33 @@ class VillaController extends Controller
             Redirect::route('clients.show, $id');
     }
     
-    public function show()
+    public function show(Request $request)
     {
-        return view('villa.show');
+        if ($request->isMethod('post')) {
+            //print_r($request);
+            DB::update('update content set description = ?, main_title = ?, updated_at = now() where section = \'about\'', 
+                                    [$request->editor1, $request->main_title]);
+            return response()->json(['success'=>'Data is successfully added']);
+        } 
+        
+        $content = DB::select('select id, main_title, section, description from content where section=\'about\'')[0];
+
+        return view('villa.show',['content' => $content, 'actionName'=> $this->actionName]);
+    }
+    
+    public function region(Request $request)
+    {
+        if ($request->isMethod('post')) {
+            //print_r($request);
+            DB::update('update content set description = ?, main_title = ?, updated_at = now() where section = \'alacati\'',
+                [$request->editor1, $request->main_title]);
+            return response()->json(['success'=>'Data is successfully added']);
+        }
+        
+        //echo $this->actionName;
+        
+        $content = DB::select('select id, main_title, section, description from content where section=\'alacati\'')[0];
+        return view('villa.region',['content' => $content, 'actionName'=> $this->actionName]);
     }
     
 }

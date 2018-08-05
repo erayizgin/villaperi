@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AboutController extends Controller
 {
@@ -11,7 +12,9 @@ class AboutController extends Controller
 
     public function index()
     {
-        return view('about.index');
+        $content = DB::select('select id, section, main_title, description from content where section=\'about\'')[0];
+        
+        return view('about.index', ['content' => $content]);
     }
 
     public function show()

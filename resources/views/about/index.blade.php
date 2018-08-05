@@ -29,7 +29,7 @@
                                 <div class="col-md-8 col-md-offset-2">
 
                                     <div class="text">
-                                        <h2>Peri Hotel Hakkında</h2>
+                                        <h2>{!! $content->main_title !!}</h2>
 
                                         <!-- ===  Gallery === -->
 
@@ -56,16 +56,7 @@
                                         </div>
 
                                         <p><strong class="text-center">Peri Hotel</strong></p>
-                                        <p>
-                                            İzmirin taşevleri, yel değirmenleri, eşsiz koy ve beachleriyle meşhur şehri  Alaçatı da tatil yapmak isteyen konuklarımızı taş otelimizde ağırlamaktan mutluluk duyarız.
-
-											Gün sonunda tatlı yorgunluğunuzu, renklerin enerjisiyle bütünleştirdiğimiz butik otelimizde evinizde ki huzur ve konforu hissederek  atabilirsiniz.
-                                        </p>
-                                        <p>
-                                        	Alaçatı merkeze 5 dk yürüme mesafesinde olan Butik Otelimiz 8 farklı konseptli oda tipine sahiptir. 
-                                        	Double ,Twin, Süperior ve Deluxe olmak üzere 4 tip yatak kapasitesine sahiptir. Bir adet açık yüzme havuzu iki ön ve arka olmak üzere 
-                                        	bahçesi bulunmaktadır. Açılabilir kahvaltı alanına sahiptir.
-                                    	</p>
+                                        {!! $content->description !!}
                                     </div>
                                 </div> <!--/col-->
                             </div> <!--/row-->
