@@ -21,6 +21,8 @@ Route::get('villa/logout', 'VillaController@logout');
 Route::post('villa/show', 'VillaController@show');
 Route::post('villa/region', 'VillaController@region');
 Route::get('villa/region', 'VillaController@region');
+Route::get('villa/dashboard', 'VillaController@dashboard');
+Route::post('villa/analytics', 'VillaController@analytics');
 Route::resource('villa', 'VillaController');
 
 Route::resource('facility', 'FacilityController');

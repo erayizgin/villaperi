@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use Analytics;
+use Spatie\Analytics\Period;
+use Carbon\Carbon;
+
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
@@ -24,6 +28,28 @@ class VillaController extends Controller
         return view('villa.index');   
     }
     
+    public function dashboard()
+    {
+        if (Session::has('userinfo'))
+        {
+            $userName = Session::get('userinfo')['name'];
+        } else
+            return redirect('villa');
+        
+        $content = DB::select('select id, main_title, section, description from content where section=\'about\'')[0];
+        return view('villa.dashboard', ['content' => $content, 'actionName'=> $this->actionName]); 
+    }
+    
+    public function analytics(Request $request)
+    {
+        $startDate = new \DateTime($request->start);
+        $endDate = new \DateTime($request->end);
+        $period = Period::create($startDate, $endDate);
+        $analyticsData = Analytics::fetchTotalVisitorsAndPageViews($period);
+        return \Response::json(compact('analyticsData'));
+        //return view('villa.analytics');
+    }
+    
     public function trysign(Request $request)
     {
         $email = $request->email;
@@ -44,7 +70,7 @@ class VillaController extends Controller
         }
         
         if (Session::has('userinfo'))       
-            return redirect('villa/show');
+            return redirect('villa/dashboard');
         else 
             return redirect('villa');
     }
@@ -93,6 +119,16 @@ class VillaController extends Controller
     {
         Session::flush();
         return redirect('villa');
+        
+    }
+    
+    public function apitest()
+    {
+        //fetch the most visited pages for today and the past week
+        $analyticsData = Analytics::fetchMostVisitedPages(Period::days(7));
+        
+        //fetch visitors and page views for the past week
+        $analyticsDataMost = Analytics::fetchVisitorsAndPageViews(Period::days(7));
         
     }
     

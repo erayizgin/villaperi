@@ -12,15 +12,7 @@
 <script src="{{ asset('public/css/admin/bower_components/ckeditor/ckeditor.js') }}"></script>
 <!-- Bootstrap WYSIHTML5 -->
 <script src="{{ asset('public/css/admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}"></script>
-<script>
-  $(function () {
-    // Replace the <textarea id="editor1"> with a CKEditor
-    // instance, using default configuration.
-    CKEDITOR.replace('editor1')
-    //bootstrap WYSIHTML5 - text editor
-    $('.textarea').wysihtml5()
-  })
-</script>
+
 <script>
     $.ajaxSetup({
     	  headers: {
@@ -29,4 +21,14 @@
 	});
 </script>
 
+
 @yield('pageinlinejs')
+
+<script type="text/javascript">
+        var SITE_URL = "{{ env('APP_URL') }}";
+    </script>
+    <!-- Fonts -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/public/analytics-laravel/app.css') }}" />
